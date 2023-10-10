@@ -1,14 +1,14 @@
 while True:
-    input_str = input("Please enter two words : ")
-    if input_str == 'done':
+    str1 = input("Please enter two words : ")
+    if str1 == 'done':
         print('-- bye!!')
         break
-    elif input_str == '':
+    elif str1 == '':
          print('-- bye!!')
          break
-    words = input_str.split()
+    words = str1.split()
     if len(words) != 2:
-        input_str = input("Please enter two words : ")
+        str1 = input("Please enter two words : ")
     else:
         word1, word2 = words
         if word1 < word2:
